@@ -16,7 +16,7 @@ You will be able to:
 
 ## The Data: Last Words of Death Row Inmates
 
-On Kaggle thre is a famous data set of *[Last Words of Death Row Inmates](https://www.kaggle.com/datasets/mykhe1097/last-words-of-death-row-inmates)*. While this data set is often used for natural language processing, we'll use the non-text data for statistical inference on one and two means using the t-distribution.
+On Kaggle there is a famous data set of *[Last Words of Death Row Inmates](https://www.kaggle.com/datasets/mykhe1097/last-words-of-death-row-inmates)*. While this data set is often used for natural language processing, we'll use the non-text data for statistical inference on one and two means using the t-distribution.
 
 ### Data Dictionary
 
@@ -38,7 +38,7 @@ The dataset consists of 545 observations with 21 variables. They are:
 * `WhiteVictim`, `HispanicVictim`, `BlackVictim`, `VictimOtherRace` `FemaleVictim`, `MaleVictim`: Number of victims with specified demographic features, numeric.
 * `LastStatement`: Last statement of offender, character.
 
-The [data file](https://github.com/learn-co-curriculum/dsc-hypothesis-testing-ent/blob/main/data/texas.csv) that we'll be using has the first 20 variables, i.e. we're exclusing the `LastStatement` variable.
+The [data file](https://github.com/learn-co-curriculum/dsc-hypothesis-testing-ent/blob/main/data/texas.csv) that we'll be using has the first 20 variables, i.e. we're excluding the `LastStatement` variable.
 
 *N.B.*: Note this data is from 1982 - 2017 and for that time period the data is exhaustive.
 
@@ -168,6 +168,12 @@ In the code block below please respond to all of the following (commented out):
 
 ```python
 # Type your responses to the bullet points here
+```
+
+
+```python
+pc = df[df['PreviousCrime'] == 'Yes']
+npc = df[df['PreviousCrime'] == 'No']
 ```
 
 #### Confidence Interval
